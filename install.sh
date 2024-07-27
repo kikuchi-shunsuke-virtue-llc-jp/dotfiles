@@ -19,6 +19,13 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 (cd "$dfdir" && brew bundle)
 
+# initialize anyenv
+if [ ! -d ~/.anyenv ]; then
+	anyenv init
+	eval "$(anyenv init -)"
+	anyenv install --init
+fi
+
 # install dotfiles
 backupAndInstall "${dfdir}"/zshrc ~/.zshrc
 backupAndInstall "${dfdir}"/gitconfig ~/.gitconfig
