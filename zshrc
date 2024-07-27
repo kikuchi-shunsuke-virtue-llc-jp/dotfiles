@@ -1,2 +1,12 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(anyenv init -)"
+. "$HOME/.cargo/env"
+
+PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"
+MANPATH="/opt/homebrew/opt/gnu-tar/libexec/gnuman:$MANPATH"
+PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+MANPATH="/opt/homebrew/opt/gnu-sed/libexec/gnuman:$MANPATH"
+PATH="/opt/homebrew/opt/gawk/libexec/gnubin:$PATH"
+MANPATH="/opt/homebrew/opt/gawk/libexec/gnuman:$MANPATH"
+PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+MANPATH="/opt/homebrew/opt/grep/libexec/gnuman:$MANPATH"
