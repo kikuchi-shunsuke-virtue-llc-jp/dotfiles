@@ -7,7 +7,7 @@ function backupAndInstall() {
   if [ -h "$topath" ]; then
     rm "$topath"
   elif [ -e "$topath" ]; then
-    mv *$topath*{,.bk}
+    mv "$topath"{,.bk}
   fi
   ln -s "$frompath" "$topath"
 }
@@ -26,3 +26,7 @@ backupAndInstall "${dfdir}"/gitconfig ~/.gitconfig
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
 backupAndInstall "${dfdir}"/ssh-config ~/.ssh/config
+
+mkdir -p ~/.config/karabiner
+chmod 700 ~/.config ~/.config/karabiner
+backupAndInstall "${dfdir}"/karabiner.json ~/.config/karabiner/karabiner.json
