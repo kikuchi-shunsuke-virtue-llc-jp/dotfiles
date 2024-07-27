@@ -2,3 +2,5 @@
 [user]
 	name = KIKUCHI Shunsuke
 	email = kikuchi.shunsuke@virtue.llc
+[init]
+	defaultBranch = main
