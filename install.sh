@@ -21,6 +21,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # install dotfiles
 backupAndInstall "${dfdir}"/zshrc ~/.zshrc
+backupAndInstall "${dfdir}"/gitconfig ~/.gitconfig
 
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
