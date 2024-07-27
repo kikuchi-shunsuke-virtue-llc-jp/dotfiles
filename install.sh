@@ -21,3 +21,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # install dotfiles
 backupAndInstall "${dfdir}"/zshrc ~/.zshrc
+
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+backupAndInstall "${dfdir}"/ssh-config ~/.ssh/config
