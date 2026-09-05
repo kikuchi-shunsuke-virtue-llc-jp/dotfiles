@@ -56,8 +56,8 @@ PROMPT='
 \$ '
 
 # for Android SDK
-export ANDROID_HOME="${HOME}/Library/Android/sdk"
-export PATH="${PATH}:${ANDROID_HOME}/platform-tools"
+export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
 
 # .local/bin
 export PATH="${HOME}/.local/bin:${PATH}"
